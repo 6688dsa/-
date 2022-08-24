@@ -17,7 +17,7 @@ public class MessageFactory {
 
     public static WxMpTemplateMessage resolveMessage(Friend friend) {
         return WxMpTemplateMessage.builder()
-                .url("https://ofpp.cn") // 点击后的跳转链接 可自行修改 也可以不填
+                .url("http://wap.weather.com.cn/mweather/101180101.shtml") // 点击后的跳转链接 可自行修改 也可以不填
                 .toUser(friend.getUserId())
                 .templateId(StrUtil.emptyToDefault(friend.getTemplateId(), Bootstrap.TEMPLATE_ID))
                 .data(buildData(friend))
