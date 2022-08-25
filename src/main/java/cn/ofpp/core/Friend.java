@@ -31,13 +31,15 @@ public class Friend {
 
     private final String sex;
 
+    private final String constellation;//星座
+
     private final String templateId;
 
-    public Friend(String fullName, String province, String city, String userId, String birthday, String loveTime, String sex) {
-        this(fullName, province, city, userId, birthday, loveTime, sex, null);
+    public Friend(String fullName, String province, String city, String userId, String birthday, String loveTime, String sex ,String constellation) {
+        this(fullName, province, city, userId, birthday, loveTime, sex, constellation,null);
     }
 
-    public Friend(String fullName, String province, String city, String userId, String birthday, String loveTime, String sex, String templateId) {
+    public Friend(String fullName, String province, String city, String userId, String birthday, String loveTime, String sex,String constellation, String templateId) {
         this.fullName = fullName;
         this.howOld = age(DateUtil.parse(birthday), new Date());
         this.province = province;
@@ -46,6 +48,7 @@ public class Friend {
         this.birthday = birthday;
         this.loveTime = loveTime;
         this.sex = sex;
+        this.constellation=constellation;
         this.templateId = templateId;
     }
 
@@ -79,6 +82,10 @@ public class Friend {
 
     public String getSex() {
         return sex;
+    }
+
+    public String getConstellation() {
+        return constellation;
     }
 
     public String getTemplateId() {

@@ -8,13 +8,14 @@ package cn.ofpp.core;
  */
 public class BoyFriend extends Friend {
 
-    public BoyFriend(String fullName, String province, String city, String birthday, String loveTime, String userId) {
-        super(fullName, province, city, userId, birthday, loveTime, "男");
+    public BoyFriend(String fullName, String province, String city, String birthday, String loveTime,String constellation, String userId) {
+        super(fullName, province, city, userId, birthday, loveTime, "男",constellation);
     }
 
-    public BoyFriend(String fullName, String province, String city, String birthday, String loveTime, String userId, String templateId) {
-        super(fullName, province, city, userId, birthday, loveTime, "男", templateId);
+    public BoyFriend(String fullName, String province, String city, String birthday, String loveTime,String constellation ,String userId, String templateId) {
+        super(fullName, province, city, userId, birthday, loveTime, "男",constellation, templateId);
     }
+
 
 
 }
