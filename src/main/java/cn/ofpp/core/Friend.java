@@ -6,6 +6,7 @@ import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 
 import java.util.Date;
+import java.util.TimeZone;
 
 import static cn.hutool.core.date.DateUtil.age;
 
@@ -107,6 +108,7 @@ public class Friend {
     public static String getNextDay(DateTime dateTime) {
         dateTime = DateUtil.beginOfDay(dateTime);
         DateTime now = DateUtil.beginOfDay(new Date());
+        now.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
         dateTime.offset(DateField.YEAR, now.year() - dateTime.year());
         if (now.isAfter(dateTime)) {
             return String.valueOf(dateTime.offset(DateField.YEAR, 1).between(now, DateUnit.DAY));
