@@ -6,8 +6,8 @@ import cn.ofpp.core.Wx;
 /**
  * 引导配置
  *
- * @author DokiYolo
- * Date 2022-08-22
+ * @author aZe
+ * Date 2022-08-25
  */
 public class Bootstrap {
 

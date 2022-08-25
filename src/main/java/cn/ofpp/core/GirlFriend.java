@@ -3,8 +3,8 @@ package cn.ofpp.core;
 /**
  * 你可以new一个女朋友
  *
- * @author DokiYolo
- * Date 2022-08-22
+ * @author aZe
+ * Date 2022-08-25
  */
 public class GirlFriend extends Friend {
 

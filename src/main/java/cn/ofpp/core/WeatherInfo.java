@@ -1,8 +1,8 @@
 package cn.ofpp.core;
 
 /**
- * @author DokiYolo
- * Date 2022-08-22
+ * @author 刘毅泽
+ * Date 2022-08-25
  */
 public class WeatherInfo {
 

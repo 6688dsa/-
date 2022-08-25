@@ -6,7 +6,9 @@ import com.google.gson.JsonObject;
 
 import java.net.URLEncoder;
 
-//星座运势
+/**
+ * @author 刘毅泽
+ */
 public class TodayHoroscope {
 
     public static final String key="4b8c42b85080512c465cba9043919a1e";

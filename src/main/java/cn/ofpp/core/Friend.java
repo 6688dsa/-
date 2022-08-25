@@ -11,8 +11,8 @@ import java.util.TimeZone;
 import static cn.hutool.core.date.DateUtil.age;
 
 /**
- * @author DokiYolo
- * Date 2022-08-22
+ * @author aZe
+ * Date 2022-08-25
  */
 public class Friend {
 

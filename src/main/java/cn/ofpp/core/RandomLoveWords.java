@@ -6,6 +6,9 @@ import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.google.gson.JsonObject;
 
+/**
+ * @author 刘毅泽
+ */
 public class RandomLoveWords {
 
     public static String getLoveWords(){
