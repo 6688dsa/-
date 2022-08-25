@@ -4,20 +4,43 @@ import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONUtil;
 import com.google.gson.JsonObject;
 
+import java.net.URLEncoder;
+
 //星座运势
 public class TodayHoroscope {
+
     public static final String key="4b8c42b85080512c465cba9043919a1e";
     public static today getToday(String constellation){
+        constellation= URLEncoder.encode(constellation);
         String url="http://web.juhe.cn/constellation/getAll?consName="+constellation+"&type=today&key="+key;
         String today = HttpUtil.get(url, 4000);
-        return JSONUtil.parseObj(today).toBean(TodayHoroscope.today.class);
+        return JSONUtil.parseObj(today).toBean(today.class);
     }
     public static week getweek(String constellation){
+        constellation= URLEncoder.encode(constellation);
         String url="http://web.juhe.cn/constellation/getAll?consName="+constellation+"&type=today&key="+key;
         String week = HttpUtil.get(url, 4000);
-        return JSONUtil.parseObj(week).toBean(TodayHoroscope.week.class);
+        return JSONUtil.parseObj(week).toBean(week.class);
     }
     static class today{
+        @Override
+        public String toString() {
+            return "today{" +
+                    "name='" + name + '\'' +
+                    ", datetime='" + datetime + '\'' +
+                    ", date='" + date + '\'' +
+                    ", all='" + all + '\'' +
+                    ", color='" + color + '\'' +
+                    ", health='" + health + '\'' +
+                    ", love='" + love + '\'' +
+                    ", money='" + money + '\'' +
+                    ", number='" + number + '\'' +
+                    ", QFriend='" + QFriend + '\'' +
+                    ", summary='" + summary + '\'' +
+                    ", work='" + work + '\'' +
+                    '}';
+        }
+
         /*星座名称*/
         String name;
         /*日期 例"2014年06月27日"*/
