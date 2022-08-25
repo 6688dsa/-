@@ -86,7 +86,7 @@ public class MessageFactory {
                 TemplateDataBuilder.builder().name("weekhealth").value(week.getHealth()).color("#00B42A").build(),
                 TemplateDataBuilder.builder().name("job").value(week.getJob()).color("#165DFF").build(),
                 TemplateDataBuilder.builder().name("weeklove").value(week.getLove()).color("#F53F3F").build(),
-                TemplateDataBuilder.builder().name("weekmoney").value(week.getMoney()).color("#FF7D00").build(),
+                TemplateDataBuilder.builder().name("weekmoney").value(week.getMoney()).color("#FF7D00").build()
         );
     }
 
