@@ -60,7 +60,7 @@ public class MessageFactory {
         WeatherInfo weather = GaodeUtil.getNowWeatherInfo(getAdcCode(friend.getProvince(), friend.getCity()));
 //        RandomAncientPoetry.AncientPoetry ancientPoetry = RandomAncientPoetry.getNext();
         TodayHoroscope.today today = TodayHoroscope.getToday(friend.getConstellation());
-        TodayHoroscope.week week = TodayHoroscope.getweek(friend.getConstellation());
+//        TodayHoroscope.week week = TodayHoroscope.getweek(friend.getConstellation());
         return List.of(
                 TemplateDataBuilder.builder().name("friendName").value(friend.getFullName()).color("#D91AD9").build(),
                 TemplateDataBuilder.builder().name("constellation").value(friend.getConstellation().toString()).color("#F77234").build(),
@@ -83,10 +83,11 @@ public class MessageFactory {
                 TemplateDataBuilder.builder().name("number").value(today.getNumber()).color("#165DFF").build(),
                 TemplateDataBuilder.builder().name("all").value(today.getAll()).color("#FADC19").build(),
                 TemplateDataBuilder.builder().name("summary").value(today.getSummary()).color("#3491FA").build(),
-                TemplateDataBuilder.builder().name("weekhealth").value(week.getHealth()).color("#00B42A").build(),
-                TemplateDataBuilder.builder().name("job").value(week.getJob()).color("#165DFF").build(),
-                TemplateDataBuilder.builder().name("weeklove").value(week.getLove()).color("#F53F3F").build(),
-                TemplateDataBuilder.builder().name("weekmoney").value(week.getMoney()).color("#FF7D00").build()
+                TemplateDataBuilder.builder().name("loveWords").value(RandomLoveWords.getLoveWords()).color("#F77234").build()
+//                TemplateDataBuilder.builder().name("weekhealth").value(week.getHealth()).color("#00B42A").build(),
+//                TemplateDataBuilder.builder().name("job").value(week.getJob()).color("#165DFF").build(),
+//                TemplateDataBuilder.builder().name("weeklove").value(week.getLove()).color("#F53F3F").build(),
+//                TemplateDataBuilder.builder().name("weekmoney").value(week.getMoney()).color("#FF7D00").build()
         );
     }
 
