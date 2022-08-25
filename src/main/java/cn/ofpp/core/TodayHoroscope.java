@@ -18,7 +18,7 @@ public class TodayHoroscope {
     }
     public static week getweek(String constellation){
         constellation= URLEncoder.encode(constellation);
-        String url="http://web.juhe.cn/constellation/getAll?consName="+constellation+"&type=today&key="+key;
+        String url="http://web.juhe.cn/constellation/getAll?consName="+constellation+"&type=week&key="+key;
         String week = HttpUtil.get(url, 4000);
         return JSONUtil.parseObj(week).toBean(week.class);
     }
