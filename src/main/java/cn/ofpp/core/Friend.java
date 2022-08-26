@@ -108,6 +108,7 @@ public class Friend {
     public static String getNextDay(DateTime dateTime) {
         dateTime = DateUtil.beginOfDay(dateTime);
         DateTime now = DateUtil.beginOfDay(new Date());
+        dateTime.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
         now.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
         dateTime.offset(DateField.YEAR, now.year() - dateTime.year());
         if (now.isAfter(dateTime)) {
@@ -115,5 +116,6 @@ public class Friend {
         }
         return String.valueOf(dateTime.between(now, DateUnit.DAY));
     }
+
 
 }

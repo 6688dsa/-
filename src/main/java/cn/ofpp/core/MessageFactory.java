@@ -58,7 +58,6 @@ public class MessageFactory {
      */
     private static List<WxMpTemplateData> buildData(Friend friend) {
         WeatherInfo weather = GaodeUtil.getNowWeatherInfo(getAdcCode(friend.getProvince(), friend.getCity()));
-//        RandomAncientPoetry.AncientPoetry ancientPoetry = RandomAncientPoetry.getNext();
         TodayHoroscope.today today = TodayHoroscope.getToday(friend.getConstellation());
 //        TodayHoroscope.week week = TodayHoroscope.getweek(friend.getConstellation());
         return List.of(
