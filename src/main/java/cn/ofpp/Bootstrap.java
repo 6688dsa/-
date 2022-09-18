@@ -8,7 +8,7 @@ import cn.ofpp.core.Wx;
  *
  * @author aZe
  * Date 2022-08-25
- */
+ */0.
 public class Bootstrap {
 
     /**
