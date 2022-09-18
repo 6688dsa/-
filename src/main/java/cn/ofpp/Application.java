@@ -28,12 +28,12 @@ public class Application {
         // -----------------  以下为演示数据  ------------------------
 
         // new 一个 女友
-        GirlFriend girlFriend = new GirlFriend("张家旭",
-                "河南省", "郑州市", "2001-04-26", "2022-03-14", "双鱼座","ohZSs6XhuAXyoWzxjQHhLmpDoSH4");
+        GirlFriend girlFriend = new GirlFriend("星星宝贝",
+                "陕西省", "杨凌区", "2000-07-25", "2022-03-14", "巨蟹座","om9bH6LqlvIKsddI3vrLptc-v1Dw");
         Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend));
 
         BoyFriend me_test = new BoyFriend("多多",
-                "陕西省", "杨陵区", "2000-12-02", "2022-03-14", "射手座","om9bH6P_Xvg__Y-9B6n1r0tlzKNs");
+                "河南省", "郑州市", "2000-12-02", "2022-03-14", "射手座","om9bH6P_Xvg__Y-9B6n1r0tlzKNs");
         Wx.sendTemplateMessage(MessageFactory.resolveMessage(me_test));
         // new 一个 男友 也可单独针对一个friend设置模板ID 以达到不同人不同消息
 //        BoyFriend boyFriend = new BoyFriend("某男友",
