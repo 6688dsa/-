@@ -2,18 +2,21 @@
 早上好呀!{{friendName.DATA}}
 
 距离你下一次生日{{nextBirthday.DATA}}天
-距离我们的下一次纪念日{{nextMemorialDay.DATA}}天
 现在在{{province.DATA}}{{city.DATA}}
 当前天气:{{weather.DATA}}
 当前气温:{{temperature.DATA}}
-风力描述:{{winddirection.DATA}}
-风力级别:{{windpower.DATA}}
-空气湿度:{{humidity.DATA}}
+傻星星一定要看天气哦
+低于10℃要记得穿棉衣别爱美着凉了
+10℃-20℃要穿卫衣加外套啦，是有点冷滴
+20℃-30℃薄外套加短袖或者长袖都可以
+30℃以上再傻的人也知道穿啥了吧
 
-{{friendName.DATA}}，你{{constellation.DATA}}的今日运势:
+
+{{friendName.DATA}}，你{{co}}的今nstellation.DATA日运势:
 健康指数:{{health.DATA}}   恋爱指数:{{love.DATA}}
 工作指数:{{work.DATA}}   财运指数:{{money.DATA}}
 幸运数字:{{number.DATA}}  综合指数:{{all.DATA}}
 今日概述:{{summary.DATA}}
-
+综上！今天适合想多多，please多想一点！
 {{loveWords.DATA}}
+

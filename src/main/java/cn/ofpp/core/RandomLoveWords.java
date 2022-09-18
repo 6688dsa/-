@@ -8,6 +8,7 @@ import com.google.gson.JsonObject;
 
 /**
  * @author 刘毅泽
+ * 使用天行数据接口https://www.tianapi.com/
  */
 public class RandomLoveWords {
 

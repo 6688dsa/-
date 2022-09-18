@@ -8,6 +8,7 @@ import java.net.URLEncoder;
 
 /**
  * @author 刘毅泽
+ * 使用聚合接口的API  https://www.juhe.cn/activity/detail/vcard2
  */
 public class TodayHoroscope {
 
