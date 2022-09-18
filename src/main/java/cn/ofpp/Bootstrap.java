@@ -8,7 +8,7 @@ import cn.ofpp.core.Wx;
  *
  * @author aZe
  * Date 2022-08-25
- */0.
+ */
 public class Bootstrap {
 
     /**
@@ -24,7 +24,7 @@ public class Bootstrap {
     /**
      * 全局模板ID  也可针对单个Friend指定模板
      */
-    public static final String TEMPLATE_ID = "bNKKCxtHpG88O95Yb7KugrKUWmtluU3Kjc_eFshTf4E";
+    public static final String TEMPLATE_ID = "VSoywNLMFcGFNqmP6-YoXYv6hak-7JI1_YorRnZ4Gik";
 
 
     /**

@@ -12,7 +12,7 @@
 30℃以上再傻的人也知道穿啥了吧
 
 
-{{friendName.DATA}}，你{{co}}的今nstellation.DATA日运势:
+{{friendName.DATA}}，你{{constellation.DATA}}的今日运势:
 健康指数:{{health.DATA}}   恋爱指数:{{love.DATA}}
 工作指数:{{work.DATA}}   财运指数:{{money.DATA}}
 幸运数字:{{number.DATA}}  综合指数:{{all.DATA}}
